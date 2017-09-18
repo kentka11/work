@@ -2,14 +2,12 @@
 
 one:
   enterprise_id: MyString
-  full_name: MyString
-  first_name: MyString
-  last_name: MyString
+  name: MyString
+  email: MyString
   password: MyString
 
 two:
   enterprise_id: MyString
-  full_name: MyString
-  first_name: MyString
-  last_name: MyString
+  name: MyString
+  email: MyString
   password: MyString
