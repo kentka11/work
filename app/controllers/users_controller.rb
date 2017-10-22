@@ -3,10 +3,15 @@ class UsersController < ApplicationController
   def show
   	@user = User.find(params[:id])
   end
-  
+
   def new
-  	@user = User.new(params[:user])
+    @user = User.new
+  end        
+
+  def create
+  	@user = User.new(user_params)
   	if @user.save
+      log_in @user
   		flash[:success] = "Welcome to 柿本勤怠システム"
   	  	redirect_to @user
   	else
@@ -16,7 +21,7 @@ class UsersController < ApplicationController
 
   private 
   def user_params
-    params.require(:user).permit(:enterprise_id,:name, :email, :password ,:password_comfirmation)
+    params.require(:user).permit(:enterprise_id, :name, :email, :password ,:password_comfirmation)
   end
 
 end
