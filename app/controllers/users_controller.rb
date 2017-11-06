@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   		flash[:success] = "Welcome to 柿本勤怠システム"
   	  	redirect_to @user
   	else
-  	  	render 'new'
+  	  	render 'users/new'
   	end
   end
 

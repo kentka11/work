@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: 1
+  attend_date: 2017-11-06
+  in_time: 2017-11-06 23:53:42
+  out_time: 2017-11-06 23:53:42
+  break_time: 2017-11-06 23:53:42
+  reason: MyText
+
+two:
+  status: 1
+  attend_date: 2017-11-06
+  in_time: 2017-11-06 23:53:42
+  out_time: 2017-11-06 23:53:42
+  break_time: 2017-11-06 23:53:42
+  reason: MyText

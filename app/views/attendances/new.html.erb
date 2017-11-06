@@ -1,0 +1,20 @@
+<% provide(:title, 'Input') %>
+<h1>出勤登録</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@attendance) do |f| %>
+
+      <%= f.label '出勤時間' %>
+      <%= f.text_field :in_time, class: 'form-control' %>
+
+      <%= f.label :name %>
+      <%= f.datetime_field :name, class: 'form-control' %>
+
+      <%= f.label :email %>
+      <%= f.datetime :email, class: 'form-control' %>
+
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

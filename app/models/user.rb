@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+    has_many :attendance
+
+
 	attr_accessor :remember_token
 	before_save { self.email = email.downcase }
 	validates :enterprise_id, presence: true, length: {maximum: 20}
